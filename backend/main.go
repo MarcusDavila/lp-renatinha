@@ -29,6 +29,12 @@ func main() {
 	// Routes
 	r.POST("/api/contact", handleContact)
 
+	// Serve static files from the "static" directory
+	r.Static("/", "./static")
+	r.NoRoute(func(c *gin.Context) {
+		c.File("./static/index.html")
+	})
+
 	// Start server
 	log.Println("Server starting on :8080")
 	r.Run(":8080")

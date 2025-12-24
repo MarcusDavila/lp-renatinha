@@ -9,7 +9,7 @@ RUN npm run build
 # Estágio 2: Build do Back-end (Go)
 FROM golang:1.21-alpine AS backend-builder
 WORKDIR /app
-COPY . .
+COPY backend/ ./
 # Copia o front buildado para onde o Go vai servir os arquivos estáticos
 COPY --from=frontend-builder /app/frontend/dist ./static 
 RUN go build -o main .
