@@ -1,0 +1,197 @@
+/* Shared Section Titles */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-primary-blue);
+    margin-bottom: var(--spacing-xs);
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto var(--spacing-xl);
+    font-size: 1.1rem;
+}
+
+/* Services */
+.services-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-white);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.service-card {
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    text-align: left;
+    /* Aligned left as per image */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.service-image-container {
+    width: calc(100% + 2 * var(--spacing-lg));
+    margin: calc(-1 * var(--spacing-lg)) calc(-1 * var(--spacing-lg)) var(--spacing-md);
+    height: 180px;
+    overflow: hidden;
+    border-radius: var(--border-radius-lg) var(--border-radius-lg) 0 0;
+}
+
+.service-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-card-img {
+    transform: scale(1.05);
+}
+
+.service-icon-wrapper {
+    background-color: #F0F2F5;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.service-icon {
+    color: var(--color-primary-blue);
+    display: flex;
+    /* Fix alignment */
+}
+
+.service-title {
+    color: var(--color-primary-blue);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.service-card-subtitle {
+    color: var(--color-accent-gold);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.service-desc {
+    font-size: 0.95rem;
+    color: var(--color-text-light);
+    margin-bottom: var(--spacing-lg);
+    line-height: 1.5;
+    flex-grow: 1;
+    /* Push badge to bottom */
+}
+
+.service-badge {
+    background-color: #F0F2F5;
+    color: #444;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    align-self: flex-start;
+}
+
+.dot-small {
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent-gold);
+    border-radius: 50%;
+}
+
+
+/* Steps */
+.steps-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--color-primary-blue);
+    /* Dark background for steps? Or keep light? */
+    /* Reference image 5 shows "Como Funciona" on Dark Blue background. */
+    color: var(--color-white);
+}
+
+.steps-section .section-title {
+    color: var(--color-white);
+}
+
+.steps-section .section-subtitle {
+    color: #e0e0e0;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-xl);
+    position: relative;
+}
+
+.step-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-number {
+    background-color: var(--color-accent-gold);
+    color: var(--color-primary-blue);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    box-shadow: 0 0 0 8px rgba(255, 165, 0, 0.2);
+}
+
+.step-title {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+    color: var(--color-white);
+}
+
+.step-subtitle {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--color-accent-gold);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.step-desc {
+    font-size: 0.95rem;
+    color: #ccc;
+    max-width: 300px;
+}

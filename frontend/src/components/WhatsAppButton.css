@@ -1,0 +1,36 @@
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    /* Added for centering */
+    align-items: center;
+    /* Added for centering */
+    justify-content: center;
+    /* Added for centering */
+    transition: all 0.3s ease;
+    /* smooth hover */
+}
+
+.float:hover {
+    background-color: #20ba56;
+    box-shadow: 4px 4px 10px #777;
+    transform: scale(1.05);
+    /* Added for better feel */
+}
+
+.my-float {
+    /* margin-top: 16px; Removed because flexbox handles centering better */
+    width: 30px;
+    height: 30px;
+    fill: white;
+}

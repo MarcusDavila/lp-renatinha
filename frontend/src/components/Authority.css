@@ -1,0 +1,125 @@
+.authority-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #F8F9FA;
+    /* Very light grey/blue tint */
+    text-align: center;
+}
+
+.authority-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.authority-pill {
+    background-color: #E2E8F0;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    color: var(--color-primary-blue);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-size: 1.1rem;
+}
+
+.highlight-gold {
+    color: #D97706;
+    /* Darker gold for text readability against light bg */
+}
+
+.icon-gold {
+    color: var(--color-accent-gold);
+}
+
+/* Tech Grid */
+.tech-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.tech-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    width: 200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.tech-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tech-icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #F0F2F5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-secondary-blue);
+}
+
+.tech-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary-blue);
+    margin-bottom: 4px;
+}
+
+.tech-sub {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+}
+
+/* Trust Indicators */
+.trust-indicators {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-xl);
+    flex-wrap: wrap;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-gold-small {
+    color: var(--color-accent-gold);
+}
+
+@media (max-width: 768px) {
+    .authority-pill {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .tech-grid {
+        gap: var(--spacing-md);
+    }
+
+    .trust-indicators {
+        gap: var(--spacing-md);
+        flex-direction: column;
+    }
+}
